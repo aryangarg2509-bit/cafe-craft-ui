@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cafe: {
+          warm: "hsl(var(--cafe-warm))",
+          rich: "hsl(var(--cafe-rich))",
+          cream: "hsl(var(--cafe-cream))",
+          orange: "hsl(var(--cafe-orange))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +68,14 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-warm": "var(--gradient-warm)",
+        "gradient-coffee": "var(--gradient-coffee)",
+      },
+      boxShadow: {
+        warm: "var(--shadow-warm)",
+        soft: "var(--shadow-soft)",
       },
       keyframes: {
         "accordion-down": {
