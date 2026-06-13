@@ -1,73 +1,139 @@
-# Welcome to your Lovable project
+# ☕ Cafe Craft - Cafe Management System
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/bbd19893-d8a5-4eda-bed7-b0e005d2088e
+Cafe Craft is a modern Cafe Management System developed to simplify cafe operations through digital order management, inventory tracking, billing, and sales analytics.
 
-## How can I edit this code?
+The system helps cafe owners reduce manual work, improve efficiency, and provide a better customer experience through QR-based menu access.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Key Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bbd19893-d8a5-4eda-bed7-b0e005d2088e) and start prompting.
+### Customer Features
 
-Changes made via Lovable will be committed automatically to this repo.
+* QR Code Menu Access
+* Mobile-Friendly Interface
+* Easy Menu Browsing
+* Seamless Ordering Experience
 
-**Use your preferred IDE**
+### Admin Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Order Management
+* Billing System
+* Inventory Tracking
+* Payment Tracking
+* Sales Analytics Dashboard
+* Menu Management
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### System Features
 
-Follow these steps:
+* Real-Time Stock Updates
+* Centralized Data Management
+* Responsive Design
+* Scalable Architecture
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Problem Statement
 
-# Step 3: Install the necessary dependencies.
-npm i
+Traditional cafe operations often rely on manual order handling, stock management, and revenue tracking, leading to delays and errors.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Cafe Craft solves these challenges by providing a centralized digital platform that automates day-to-day cafe management tasks.
+
+---
+
+## Workflow
+
+1. Customer scans the QR code.
+2. Digital menu opens on the customer's device.
+3. Customer selects items and places an order.
+4. System generates the bill automatically.
+5. Inventory updates after each sale.
+6. Payment details are recorded.
+7. Sales analytics are displayed on the dashboard.
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/aryangarg2509-bit/cafe-craft-ui.git
+```
+
+### Navigate to Project Directory
+
+```bash
+cd cafe-craft-ui
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Screenshots
 
-**Use GitHub Codespaces**
+### Home Page
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+(Add Screenshot Here)
 
-## What technologies are used for this project?
+### Dashboard
 
-This project is built with:
+(Add Screenshot Here)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Menu Page
 
-## How can I deploy this project?
+(Add Screenshot Here)
 
-Simply open [Lovable](https://lovable.dev/projects/bbd19893-d8a5-4eda-bed7-b0e005d2088e) and click on Share -> Publish.
+### Analytics Dashboard
 
-## Can I connect a custom domain to my Lovable project?
+(Add Screenshot Here)
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Future Enhancements
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* Online Payment Integration
+* Customer Login System
+* Table Reservation Feature
+* AI-Based Sales Insights
+* Loyalty Rewards Program
+
+---
+
+## Author
+
+Aryan Garg
+
+GitHub: https://github.com/aryangarg2509-bit
+
+LinkedIn: https://www.linkedin.com/in/aryan-garg-55aa26304
