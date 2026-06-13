@@ -1,10 +1,30 @@
 # ☕ Cafe Craft - Cafe Management System
 
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-blue)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
+
+## Live Demo
+
+🔗 https://cafe-craft-ui.vercel.app/
+
+---
+
 ## Overview
 
-Cafe Craft is a modern Cafe Management System developed to simplify cafe operations through digital order management, inventory tracking, billing, and sales analytics.
+Cafe Craft is a modern Cafe Management System developed to streamline daily cafe operations through digital order management, inventory tracking, billing, payment monitoring, and sales analytics. The platform provides a centralized solution that improves efficiency, reduces manual work, and enhances customer experience.
 
-The system helps cafe owners reduce manual work, improve efficiency, and provide a better customer experience through QR-based menu access.
+---
+
+## Problem Statement
+
+Traditional cafe operations often rely on manual order handling, inventory management, and revenue tracking. These processes are prone to errors, increase operational overhead, and make business insights difficult to obtain.
+
+Cafe Craft solves these challenges by providing a centralized digital platform that automates cafe management tasks and enables data-driven decision-making.
 
 ---
 
@@ -23,6 +43,7 @@ The system helps cafe owners reduce manual work, improve efficiency, and provide
 * Billing System
 * Inventory Tracking
 * Payment Tracking
+* Revenue Monitoring
 * Sales Analytics Dashboard
 * Menu Management
 
@@ -32,14 +53,7 @@ The system helps cafe owners reduce manual work, improve efficiency, and provide
 * Centralized Data Management
 * Responsive Design
 * Scalable Architecture
-
----
-
-## Problem Statement
-
-Traditional cafe operations often rely on manual order handling, stock management, and revenue tracking, leading to delays and errors.
-
-Cafe Craft solves these challenges by providing a centralized digital platform that automates day-to-day cafe management tasks.
+* Improved Operational Efficiency
 
 ---
 
@@ -47,11 +61,12 @@ Cafe Craft solves these challenges by providing a centralized digital platform t
 
 1. Customer scans the QR code.
 2. Digital menu opens on the customer's device.
-3. Customer selects items and places an order.
-4. System generates the bill automatically.
-5. Inventory updates after each sale.
-6. Payment details are recorded.
-7. Sales analytics are displayed on the dashboard.
+3. Customer browses menu items.
+4. Order is placed through the system.
+5. Bill is generated automatically.
+6. Inventory updates after every sale.
+7. Payment details are recorded.
+8. Analytics dashboard displays revenue and sales insights.
 
 ---
 
@@ -64,7 +79,22 @@ Cafe Craft solves these challenges by providing a centralized digital platform t
 * Tailwind CSS
 * Vite
 
-### Tools
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MySQL
+
+### APIs & Integrations
+
+* REST APIs
+* QR Code Integration
+* GPS / Location Services
+
+### Development Tools
 
 * Git
 * GitHub
@@ -100,33 +130,15 @@ npm run dev
 
 ---
 
-## Screenshots
-
-### Home Page
-
-(Add Screenshot Here)
-
-### Dashboard
-
-(Add Screenshot Here)
-
-### Menu Page
-
-(Add Screenshot Here)
-
-### Analytics Dashboard
-
-(Add Screenshot Here)
-
----
-
 ## Future Enhancements
 
 * Online Payment Integration
-* Customer Login System
-* Table Reservation Feature
+* Customer Login & Registration
+* Table Reservation System
 * AI-Based Sales Insights
 * Loyalty Rewards Program
+* Mobile Application Support
+* Order History Tracking
 
 ---
 
