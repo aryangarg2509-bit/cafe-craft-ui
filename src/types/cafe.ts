@@ -51,3 +51,23 @@ export interface CafeConfig {
     autoRefreshInterval: number;
   };
 }
+
+// ─── Orders ───────────────────────────────────────────────────────────────────
+
+export type OrderStatus = 'pending' | 'preparing' | 'ready' | 'served';
+
+export interface OrderItem {
+  name: string;
+  qty: number;
+  price: number;
+}
+
+export interface Order {
+  _id: string;
+  tableNumber: number;
+  items: OrderItem[];
+  status: OrderStatus;
+  total: number;
+  createdAt: string;
+  updatedAt: string;
+}

@@ -6,6 +6,7 @@ import DashboardHeader from '@/components/DashboardHeader';
 import InventoryPage from '@/components/InventoryPage';
 import CustomerCarePage from '@/components/CustomerCarePage';
 import OverviewPage from '@/components/OverviewPage';
+import OrdersPage from '@/components/OrdersPage';
 
 const Dashboard = () => {
   return (
@@ -31,6 +32,7 @@ const Dashboard = () => {
           <main className="flex-1 p-6">
             <Routes>
               <Route path="/" element={<OverviewPage />} />
+              <Route path="/orders" element={<OrdersPage />} />
               <Route path="/inventory" element={<InventoryPage />} />
               <Route path="/customer-care" element={<CustomerCarePage />} />
             </Routes>

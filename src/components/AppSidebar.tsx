@@ -5,7 +5,8 @@ import {
   MessageSquare, 
   BarChart3, 
   Settings,
-  LogOut
+  LogOut,
+  ClipboardList,
 } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router-dom';
 import {
@@ -25,10 +26,11 @@ import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
 
 const navigationItems = [
-  { title: 'Overview', url: '/', icon: BarChart3 },
-  { title: 'Inventory', url: '/inventory', icon: Package },
+  { title: 'Overview',      url: '/',              icon: BarChart3 },
+  { title: 'Orders',        url: '/orders',        icon: ClipboardList },
+  { title: 'Inventory',     url: '/inventory',     icon: Package },
   { title: 'Customer Care', url: '/customer-care', icon: MessageSquare },
-  { title: 'Settings', url: '/settings', icon: Settings },
+  { title: 'Settings',      url: '/settings',      icon: Settings },
 ];
 
 export function AppSidebar() {

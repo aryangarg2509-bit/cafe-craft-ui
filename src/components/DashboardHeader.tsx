@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { Bell, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import socket from '@/lib/socket';
 
 const DashboardHeader = () => {
+  const [newOrderCount, setNewOrderCount] = useState(0);
+
+  useEffect(() => {
+    const onNewOrder = () => setNewOrderCount((c) => c + 1);
+    socket.on('order:new', onNewOrder);
+    return () => {
+      socket.off('order:new', onNewOrder);
+    };
+  }, []);
+
+  const handleBellClick = () => setNewOrderCount(0);
+
   return (
     <header className="h-16 border-b border-border bg-card flex items-center justify-between px-6">
       <div className="flex items-center gap-4">
@@ -23,14 +36,16 @@ const DashboardHeader = () => {
       </div>
 
       <div className="flex items-center gap-3">
-        <Button variant="ghost" size="icon" className="relative">
+        <Button variant="ghost" size="icon" className="relative" onClick={handleBellClick}>
           <Bell className="h-4 w-4" />
-          <Badge 
-            variant="destructive" 
-            className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs"
-          >
-            3
-          </Badge>
+          {newOrderCount > 0 && (
+            <Badge 
+              variant="destructive" 
+              className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs animate-pulse"
+            >
+              {newOrderCount > 9 ? '9+' : newOrderCount}
+            </Badge>
+          )}
         </Button>
         <Button variant="ghost" size="icon">
           <Settings className="h-4 w-4" />
@@ -40,4 +55,4 @@ const DashboardHeader = () => {
   );
 };
 
-export default DashboardHeader;
+export default DashboardHeader;
